@@ -1,18 +1,16 @@
 import React from "react";
-import { TbChartPieFilled } from "react-icons/tb";
 import { IoBriefcaseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { PiFilesFill } from "react-icons/pi";
+import { FaUserGraduate } from "react-icons/fa6";
+import { ImHammer2 } from "react-icons/im";
 
 const Sidebar = () => {
   const menuItems = [
-    { name: "Cases", path: "/dashboard/cases", icon: <IoBriefcaseSharp /> },
-    {
-      name: "Case Hearings",
-      path: "/dashboard/hearings",
-      icon: <IoBriefcaseSharp />,
-    },
-    { name: "Case Orders", path: "/dashboard/orders", icon: <IoBriefcaseSharp /> },
-    { name: "Advocate", path: "/dashboard/advocate", icon: <IoBriefcaseSharp /> },
+    { name: "Cases", path: "/dashboard/cases", icon: <PiFilesFill /> },
+    { name: "Case Hearings", path: "/dashboard/hearings", icon: <IoBriefcaseSharp />},
+    { name: "Case Orders", path: "/dashboard/orders", icon: <ImHammer2 /> },
+    { name: "Advocate", path: "/dashboard/advocate", icon: <FaUserGraduate /> },
   ];
   return (
     <aside className="w-64 " aria-label="Sidebar">
@@ -30,7 +28,7 @@ const Sidebar = () => {
                 to={item.path}
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
               >
-                <IoBriefcaseSharp />
+                {item.icon}
                 <span className="flex-1 ml-3 whitespace-nowrap">
                   {item.name}
                 </span>

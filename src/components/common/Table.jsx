@@ -4,7 +4,7 @@ import { FiEdit, FiEye, FiTrash2 } from "react-icons/fi";
 function Table({ columns, data }) {
   return (
     <>
-      <div className="relative overflow-x-auto overflow-y-auto max-h-screen scroll-auto shadow-2xl border-0 sm:rounded-lg">
+      <div className="relative overflow-x-auto overflow-y-auto max-h-screen scroll-auto shadow-xl border-0 sm:rounded-lg">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400">
             <tr>

@@ -1,10 +1,6 @@
 import Dashboard from "./components/dashboard/Dashboard";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Sidebar from "./components/sidebar/Sidebar";
-import Cases from "./components/pages/Cases";
-import Hearings from "./components/pages/Hearings";
-import Orders from "./components/pages/Orders";
-import Advocate from "./components/pages/Advocate";
+import Login from "./components/login/Login";
 
 function App() {
   return (
@@ -12,6 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/dashboard/*" element={<Dashboard />} />   
+          <Route path="/" element={<Login />} />   
         </Routes>
       </BrowserRouter>
     </>
